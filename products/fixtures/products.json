@@ -1,0 +1,14 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340155",
+        "name": "Tapo WIFI Smart Bulb",
+        "description": "Compatibility - Works with Amazon Alexa and Google Assistant for Voice Control, Multicolour - With a wide range of colours and dimming capabilities, you can choose from multiple colours and set the mood to match any moment, Remote Access - Control your lights from anywhere with your smartphone using the free Tapo app, Device Sharing - Share management permissions with family members for multiple control, Schedules and Timers - Set schedules/timers to switch on and off automatically when you’re home or away.",
+        "price": 19.99,
+        "category": 6,
+        "rating": 4.6,
+        "image_url": "/workspace/Sky-store/media/tapo.jpg",
+        "image": "tapo.jpg"
+    }
+}]
