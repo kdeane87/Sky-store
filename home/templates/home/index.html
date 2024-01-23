@@ -12,6 +12,9 @@
 {% block content %}
 <div class="container h-100">
     <div class="row h-100">
+        <div id="image-container">
+            <img id="slider-image" src="" alt="Slider Image">
+        </div>
         <div class="col-7 col-md-6 my-auto">
             <!-- <h1 class="display-4 logo-font text-black">
                 The new collections are here
@@ -26,3 +29,62 @@
     </div>
 </div>
 {% endblock %}
+
+{% block postloadjs %}
+<script>
+    // // Array of product photos
+    // var i = 0;
+    // var images = [];
+    // var sliderImage = document.getElementById('slider-image');
+    // var time = 3000;
+
+    // //images
+    // images[0] = '/media/pexels-math-90946.jpg';
+    // images[1] = '/media/pexels-pixabay-4158.jpg';
+    // images[2] = '/workspace/Sky-store/media/tapo.jpg';
+
+    // //change image
+    // function changeImg() {
+    //     document.slide.src = images(i);
+    //     if (i < images.length - 1) {
+    //         i++;
+    //     } else {
+    //         i = 0;
+    //     }
+
+    //     setTimeout("changeImg()", time);
+    // }
+    // Array of image URLs
+    var imageArray = [
+        '/media/pexels-math-90946.jpg',
+        '/media/pexels-pixabay-4158.jpg',
+        '/workspace/Sky-store/media/tapo.jpg'
+        // Add more image URLs as needed
+    ];
+
+    var currentIndex = 0;
+    var totalImages = imageArray.length;
+    var sliderImage = document.getElementById('slider-image');
+
+    // Function to change the image source
+    function changeImage() {
+        sliderImage.src = imageArray[currentIndex];
+    }
+
+    // Initial image
+    changeImage();
+
+    // Function to show the next image
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % totalImages;
+        changeImage();
+    }
+
+    // // Function to show the previous image
+    // function prevImage() {
+    //     currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+    //     changeImage();
+    // }
+
+    setInterval(nextImage, 3500); // Change image every 3 seconds
+</script> {% endblock %}
