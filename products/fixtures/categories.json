@@ -37,8 +37,8 @@
     "pk": 6,
     "model": "products.category",
     "fields": {
-        "name": "Household",
-        "friendly_name": "Household"
+        "name": "homeware",
+        "friendly_name": "Homeware"
     }
 }, {
     "pk": 7,
