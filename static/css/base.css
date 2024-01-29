@@ -3,11 +3,26 @@ html {
 }
 
 body {
-    /* background: url('/media/pexels-pixabay-4158.jpg') no-repeat center center fixed;
+    /* background: url('/media/towels.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px); */
-    color: #555;
+    height: calc(100vh - 164px);
+    color: #4A4A48; */
     font-family: 'Lato';
+    background-color: #E5E5E5;
+
+
+}
+
+#main-image-section {
+    margin-bottom: 0;
+    background-color: ghostwhite;
+}
+
+#main-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+
 }
 
 
@@ -30,11 +45,11 @@ body {
 
 .button-56 {
     align-items: center;
-    background-color: #938f8f;
-    border: 2px solid #111;
+    background-color: #FCA311;
+    border: 2px solid #000000;
     border-radius: 8px;
     box-sizing: border-box;
-    color: #111;
+    color: #14213D;
     cursor: pointer;
     display: flex;
     font-family: Inter, sans-serif;
@@ -72,7 +87,7 @@ body {
 }
 
 .button-56:active {
-    background-color: #ffdeda;
+    background-color: #D8DAD3;
     outline: 0;
 }
 
@@ -126,8 +141,16 @@ body {
     max-height: 100%;
 }
 
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 footer {
-    background-color: black;
+    background-color: #14213D;
+    color: #E5E5E5;
 }
 
 a.category-badge>span.badge:hover {
