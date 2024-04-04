@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-kdeane87-skystore-xoysjgvmq95.ws-eu110.gitpod.io', 'cloud-store-192d8c72d488.herokuapp.com']
+ALLOWED_HOSTS = ['8000-kdeane87-skystore-xoysjgvmq95.ws-eu110.gitpod.io', 'sky-store-62d6b42a9d65.herokuapp.com']
 
 
 # Application definition
