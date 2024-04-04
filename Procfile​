@@ -1,1 +1,1 @@
-​web: gunicorn Sky_store.wsgi
+​web: gunicorn sky_store.wsgi
